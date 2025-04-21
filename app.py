@@ -18,22 +18,12 @@ CATEGORY_ICONS = {'glass': '🍷', 'metal': '🥫', 'organic': '🌿',
 RECYCLABILITY_SCORES = {'glass': "♻️ High", 'metal': "♻️ High", 'organic': "♻️ Medium",
                         'paper': "♻️ Medium", 'plastic': "♻️ Low", 'trash': "♻️ Very Low"}
 
-# Load model
+# Load model with optimizations
 @st.cache_resource
 def load_model():
-    base_model = MobileNetV2(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
-    base_model.trainable = False
+    return tf.keras.models.load_model(MODEL_PATH, compile=False)
 
-    model = models.Sequential([
-        base_model,
-        layers.GlobalAveragePooling2D(),
-        layers.Dropout(0.3),
-        layers.Dense(128, activation='relu'),
-        layers.Dense(6, activation='softmax')
-    ])
-
-    model.load_weights("models/waste_classifier.h5")
-    return model
+model = load_model()
 
 # Initialize session state
 def init_session_state():
