@@ -1,0 +1,8 @@
+streamlit
+numpy
+tensorflow
+Pillow
+requests
+python-dotenv
+tqdm
+scikit-learn
