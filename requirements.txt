@@ -1,7 +1,6 @@
 streamlit
 numpy
-tensorflow==2.13.0
-ml_dtypes==0.2.0
+tensorflow
 Pillow
 requests
 python-dotenv
