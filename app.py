@@ -119,7 +119,7 @@ with tab1:
             with st.spinner("Analyzing the image..."):
                 img_array = np.array(st.session_state.image.resize((224, 224))) / 255.0
                 img_array = np.expand_dims(img_array, axis=0)
-                label, confidence, all_probs = predict_image(img_array, model, preprocessed=True, return_all=True)
+                label, confidence, all_probs = predict_image(img_array, preprocessed=True, return_all=True)
 
             st.session_state.predicted = True
             st.session_state.result = (label, confidence, all_probs)
