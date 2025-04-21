@@ -35,8 +35,6 @@ def load_model():
     model.load_weights("models/waste_classifier.h5")
     return model
 
-model = load_model()
-
 # Initialize session state
 def init_session_state():
     for key in ["predicted", "image", "input_choice", "result"]:
