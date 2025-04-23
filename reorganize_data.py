@@ -50,7 +50,7 @@ def process_dataset():
     total_copied = 0
     total_available = 0
 
-    print("\n🔍 Scanning dataset...\n")
+    print("\nScanning dataset...\n")
 
     for broad_cat, subcats in CATEGORY_MAP.items():
         images = []
@@ -58,12 +58,12 @@ def process_dataset():
         for subcat in subcats:
             subcat_path = os.path.join(SOURCE_DIR, subcat)
             if not os.path.exists(subcat_path):
-                print(f"⚠️ Folder not found: {subcat_path}")
+                print(f"Folder not found: {subcat_path}")
                 continue
 
             domain_paths = find_domain_folders(subcat_path)
             if not domain_paths:
-                print(f"⚠️ No domain folders (default/real world) found in: {subcat_path}")
+                print(f"No domain folders (default/real world) found in: {subcat_path}")
                 continue
 
             for domain_path in domain_paths:
@@ -79,7 +79,7 @@ def process_dataset():
                     images.append((img_path, new_name))
 
         if not images:
-            print(f"⚠️ No images found for {broad_cat}")
+            print(f"No images found for {broad_cat}")
             continue
 
         total_available += len(images)
@@ -98,11 +98,11 @@ def process_dataset():
             shutil.copy(img_path, target_path)
             total_copied += 1
 
-        print(f"✅ Copied: {len(train_imgs)} train + {len(val_imgs)} val images for '{broad_cat}'")
+        print(f"Copied: {len(train_imgs)} train + {len(val_imgs)} val images for '{broad_cat}'")
 
-    print(f"\n🎉 Done copying!")
-    print(f"🔢 Total images found: {total_available}")
-    print(f"📦 Total images copied: {total_copied}")
+    print(f"\nDone copying!")
+    print(f"Total images found: {total_available}")
+    print(f"Total images copied: {total_copied}")
 
 if __name__ == "__main__":
     process_dataset()
