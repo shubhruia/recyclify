@@ -1,10 +1,13 @@
 import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 def ask_groq(prompt, model="llama3-8b-8192", temperature=0.7):
-    api_key = st.secrets["api"]["GROQ_API_KEY"]
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         raise ValueError("Missing GROQ_API_KEY. Check your .env file or environment variables.")
 
