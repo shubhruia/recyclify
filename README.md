@@ -1,14 +1,10 @@
 # ♻️ Recyclify: A Smart Waste Classification App
-Deep Learning-powered waste classification with real-time Streamlit web app and LLM-based chatbot support.
 
----
+Deep Learning-powered waste classification with real-time Streamlit web app and LLM-based chatbot support.
 
 ## 📖 About
 
-This project aims to automate **waste classification** into categories like organic, recyclable, etc., using deep learning (MobileNetV2) and provide a **user-friendly web application** built with Streamlit.  
-It also integrates a **GROQ LLM-based chatbot** for any real-time assistance regarding waste segregation.
-
----
+This project automates **waste classification** into categories like organic, recyclable, etc., using deep learning (MobileNetV2) and provide a **user-friendly web application** built with Streamlit. It also integrates a **GROQ LLM-based chatbot** for any real-time assistance regarding waste segregation.
 
 ## ✨ Features
 
@@ -17,9 +13,6 @@ It also integrates a **GROQ LLM-based chatbot** for any real-time assistance reg
 - 🤖 Chatbot integration for real-time waste management queries
 - 📈 Visualize training history (accuracy/loss graphs)
 - 🗃️ Dataset reorganization utility
-- 🌐 Easy to deploy Streamlit web app
-
----
 
 ## 🛠️ Tech Stack
 
@@ -29,14 +22,12 @@ It also integrates a **GROQ LLM-based chatbot** for any real-time assistance reg
 - **LLM:** GROQ (via API)
 - **Miscellaneous:** Pillow, Numpy, Requests, Tqdm, Matplotlib
 
----
-
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/smart-waste-classification.git
+git clone https://github.com/shubhruia/recyclify.git
 cd smart-waste-classification
 ```
 
@@ -74,8 +65,6 @@ If you wish to train your own model:
 streamlit run app.py
 ```
 
----
-
 ## 🚀 How to Use
 
 1. Upload an image or provide an image URL.
@@ -83,22 +72,9 @@ streamlit run app.py
 3. Chat with the integrated LLM for advice or doubts.
 4. View training graphs and model performance.
 
----
-
 ## 🎥 Demo
 
-> ✨ **(Add a small GIF or YouTube link here showing the app predicting and chatbot answering.)**  
-Example:
-
-| ![Demo Gif](https://github.com/yourusername/smart-waste-classification/blob/main/assets/demo.gif) |
-|:--:|
-| *Prediction and Chatbot in action!* |
-
-Or you can add:
-
 [![Watch the Demo](https://img.youtube.com/vi/your_video_id/0.jpg)](https://youtu.be/your_video_id)
-
----
 
 ## 🖼️ Screenshots
 
@@ -112,24 +88,6 @@ Or you can add:
 | :---: | :---: |
 | ![Prediction Result](assets/result.png) | ![Chatbot](assets/chatbot.png) |
 
----
-
-## 📂 Project Structure
-
-```
-├── app.py                 # Streamlit App
-├── train_model.ipynb       # Jupyter Notebook for training
-├── reorganize_data.py      # Dataset preparation script
-├── groq.py                 # GROQ LLM Chatbot helper
-├── waste_model.h5          # Trained model file
-├── requirements.txt        # Python dependencies
-├── .env                    # Environment variables (GROQ API Key)
-├── assets/                 # Screenshots and other media
-└── README.md
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!  
@@ -141,34 +99,12 @@ If you find a bug or want a feature, feel free to open an issue or a pull reques
 4. Push to the branch (`git push origin feature/feature-name`).
 5. Open a Pull Request.
 
----
-
 ## 📜 License
 
 Distributed under the **MIT License**.  
-See `LICENSE` for more information.
-
----
+See [LICENSE](LICENSE) for more information.
 
 ## 📬 Contact
 
-- **Your Name:** [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- **Project Link:** [GitHub Repo](https://github.com/yourusername/smart-waste-classification)
-
----
-
-# 🔥 Pro Tips for an even better README:
-
-- Add a **top badge** like:
-  ```markdown
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-  ![Python Version](https://img.shields.io/badge/Python-3.9+-blue.svg)
-  ```
-- Create a short **demo video (~20-30 sec)** and embed it.
-- Upload your **screenshots/GIFs inside an `assets/` folder**.
-- Create a proper `.gitignore` to avoid uploading unnecessary files (like model checkpoints, env files).
-
----
-
-Would you also like me to create a ready-to-paste `.gitignore` file? 🚀 It’ll help clean your repo too.  
-Want me to send that? 🎯
+- **Shubh Ruia:** [LinkedIn](https://www.linkedin.com/in/shubh-ruia/)
+- **Project Link:** [GitHub](https://github.com/shubhruia/recyclify)
