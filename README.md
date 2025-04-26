@@ -72,7 +72,7 @@ streamlit run app.py
 3. Chat with the integrated LLM for advice or doubts.
 4. View training graphs and model performance.
 
-## 🎥 Demo - Watch it [here](https://www.youtube.com/watch?v=vUDj-ckzLRU)
+## 🎥 Demo - Watch it [here](https://www.youtube.com/watch?v=vUDj-ckzLRU).
 
 ## 🖼️ Screenshots
 
