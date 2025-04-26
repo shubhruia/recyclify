@@ -72,9 +72,7 @@ streamlit run app.py
 3. Chat with the integrated LLM for advice or doubts.
 4. View training graphs and model performance.
 
-## 🎥 Demo
-
-[![Watch the Demo](https://github.com/shubhruia/recyclify/blob/main/assets/Homepage.png)](https://youtu.be/vUDj-ckzLRU)
+## 🎥 Demo - Watch it on [Youtube](https://www.youtube.com/watch?v=vUDj-ckzLRU)
 
 ## 🖼️ Screenshots
 
