@@ -78,11 +78,9 @@ streamlit run app.py
 
 ## 🖼️ Screenshots
 
-> ✨ **(Add screenshots showing the app interface, file upload, prediction results, and chatbot window.)**
-
 | Home Page | Upload Image |
 | :---: | :---: |
-| ![Home Page](assets/homepage.png) | ![Upload Image](assets/upload.png) |
+| ![Home Page](assets/Homepage.png) | ![Upload Image](assets/upload.png) |
 
 | Result | Chatbot |
 | :---: | :---: |
