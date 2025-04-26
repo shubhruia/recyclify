@@ -74,7 +74,7 @@ streamlit run app.py
 
 ## 🎥 Demo
 
-[![Watch the Demo](https://img.youtube.com/vi/your_video_id/0.jpg)](https://youtu.be/your_video_id)
+[![Watch the Demo](https://github.com/shubhruia/recyclify/blob/main/assets/Homepage.png)](https://youtu.be/vUDj-ckzLRU)
 
 ## 🖼️ Screenshots
 
