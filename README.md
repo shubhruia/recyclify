@@ -78,13 +78,17 @@ streamlit run app.py
 
 ## 🖼️ Screenshots
 
-| Home Page | Upload Image |
-| :---: | :---: |
-| ![Home Page](assets/Homepage.png) | ![Upload Image](assets/upload.png) |
+### Home Page
+![Home Page](assets/Homepage.png)
 
-| Result | Chatbot |
-| :---: | :---: |
-| ![Prediction Result](assets/result.png) | ![Chatbot](assets/chatbot.png) |
+### Image Upload Section
+![Upload Image](assets/Upload.png)
+
+### Prediction Result
+![Prediction Result](assets/Result.png)
+
+### Chatbot Interaction
+![Chatbot](assets/Chatbot.png)
 
 ## 🤝 Contributing
 
