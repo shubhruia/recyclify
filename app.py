@@ -238,7 +238,7 @@ with st.sidebar:
     st.markdown("""
 Helps users identify the type of waste in an image and provides helpful disposal tips to encourage proper recycling habits.
 - Built using **MobileNetV2**, a lightweight CNN model ideal for its efficiency and high performance.
-- Achieved an accuracy of **91.87%** on validation data.
+- Achieved an accuracy of **~91%** on validation data.
 - Trained on the [Recyclable and Household Waste Classification dataset](https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification/data), containing **15,000+ images**.
 - Uses LLM to generate fun environmental facts and eco-friendly tips based on the predicted waste type.
     """)
