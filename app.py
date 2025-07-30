@@ -15,7 +15,7 @@ from groq import ask_groq
 st.set_page_config(page_title="Recyclify", page_icon="♻️", layout="centered")
 
 # Constants
-MODEL_PATH = "models/waste_classifier.h5"
+MODEL_PATH = "models/waste_classifier.keras"
 CLASS_LABELS = ['glass', 'metal', 'organic', 'paper', 'plastic', 'trash']
 CATEGORY_ICONS = {'glass': '🍷', 'metal': '🥫', 'organic': '🌿',
                   'paper': '📄', 'plastic': '🧴', 'trash': '🗑️'}
