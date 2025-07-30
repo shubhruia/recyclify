@@ -1,10 +1,10 @@
-tensorflow==2.13.1
-h5py==3.8.0
-streamlit==1.36.0
-numpy<2.0
-pillow>=10.0.0
+tensorflow
+h5py
+streamlit
+numpy
+pillow
 matplotlib
-requests>=2.31.0
-python-dotenv>=1.0.0
+requests
+python-dotenv
 tqdm
 scikit-learn
