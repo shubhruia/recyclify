@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import numpy as np
 import tensorflow as tf
@@ -11,17 +12,28 @@ from groq import ask_groq
 st.set_page_config(page_title="Recyclify", page_icon="♻️", layout="centered")
 
 # Constants
-MODEL_PATH = "models/waste_classifier.keras"
+MODEL_PATHS = ["models/waste_classifier.keras", "models/waste_classifier.h5"]
 CLASS_LABELS = ['glass', 'metal', 'organic', 'paper', 'plastic', 'trash']
 CATEGORY_ICONS = {'glass': '🍷', 'metal': '🥫', 'organic': '🌿',
                   'paper': '📄', 'plastic': '🧴', 'trash': '🗑️'}
 RECYCLABILITY_SCORES = {'glass': "♻️ High", 'metal': "♻️ High", 'organic': "♻️ Medium",
                         'paper': "♻️ Medium", 'plastic': "♻️ Low", 'trash': "♻️ Very Low"}
 
-# Load model with optimizations
+# Load model
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model(MODEL_PATH, compile=False)
+    last_err = None
+    for p in MODEL_PATHS:
+        if os.path.exists(p):
+            try:
+                m = tf.keras.models.load_model(p, compile=False)
+                return m
+            except Exception as e:
+                last_err = e
+    st.error("Model failed to load. Try re-saving to `.keras` as shown.")
+    if last_err:
+        st.exception(last_err)
+    st.stop()
 
 model = load_model()
 
